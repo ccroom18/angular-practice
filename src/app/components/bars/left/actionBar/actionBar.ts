@@ -3,9 +3,8 @@ import {NgIcon, provideIcons} from "@ng-icons/core";
 import {ActionButtonsService} from "./actionButtonsService";
 
 @Component({
-  selector: 'action-bar',
-  standalone: true,
-  template: `<div class="action-bar">
+    selector: 'action-bar',
+    template: `<div class="action-bar">
     @for (button of actionButtons?.buttons(); track button.label)
     {
         <button class="action-button" (click)="button.action?.()">
@@ -13,8 +12,8 @@ import {ActionButtonsService} from "./actionButtonsService";
         </button>
     }
   </div>`,
-  styleUrl: 'actionBar.scss',
-  imports: [NgIcon],
+    styleUrl: 'actionBar.scss',
+    imports: [NgIcon]
 })
 export class actionBar {
   actionButtons = inject(ActionButtonsService, {

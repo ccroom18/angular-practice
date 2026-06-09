@@ -4,15 +4,14 @@ import {ActionButtonsService} from "../components/bars/left/actionBar/actionButt
 import {matArrowForwardIos, matHome} from "@ng-icons/material-icons/baseline";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    mainLayout
-  ],
-  template: `
+    selector: 'app-root',
+    imports: [
+        mainLayout
+    ],
+    template: `
     <main-layout></main-layout>`,
-  styleUrl: '../components/mainLayout/mainLayout.scss',
-  providers: [ActionButtonsService]
+    styleUrl: '../components/mainLayout/mainLayout.scss',
+    providers: [ActionButtonsService]
 })
 export class Inspection {
   constructor(private actionButtons: ActionButtonsService) {

@@ -2,11 +2,9 @@ import {Component} from "@angular/core";
 import {CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray} from "@angular/cdk/drag-drop";
 
 @Component({
-  selector: 'view-panel',
-  standalone: true,
-  templateUrl: 'viewPanel.html',
-  styleUrl: 'viewPanel.scss',
-  imports: [CdkDrag, CdkDropList]
+    selector: 'view-panel',
+    templateUrl: 'viewPanel.html',
+    styleUrl: 'viewPanel.scss'
 })
 export class ViewPanel {
   views = [

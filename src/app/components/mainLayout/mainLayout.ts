@@ -5,16 +5,15 @@ import {LeftPanel} from "../panels/left/leftPanel";
 import {ViewPanel} from "../../viewPanel/viewPanel";
 
 @Component({
-  selector: 'main-layout',
-  standalone: true,
-  templateUrl: 'mainLayout.html',
-  imports: [
-    LeftBar,
-    TopBar,
-    LeftPanel,
-    ViewPanel
-  ],
-  styleUrl: 'mainLayout.scss'
+    selector: 'main-layout',
+    templateUrl: 'mainLayout.html',
+    imports: [
+        LeftBar,
+        TopBar,
+        LeftPanel,
+        ViewPanel
+    ],
+    styleUrl: 'mainLayout.scss'
 })
 export class mainLayout {
   leftPanelCollapsed = signal(true);

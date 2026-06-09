@@ -2,9 +2,8 @@ import { Component } from "@angular/core";
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'top-bar',
-  standalone: true,
-  template: `
+    selector: 'top-bar',
+    template: `
     <div class="main">
       @for (button of buttons; track button.path) {
         <button
@@ -14,10 +13,10 @@ import {RouterLink} from "@angular/router";
       }
     </div>
   `,
-  imports: [
-    RouterLink
-  ],
-  styleUrl: './bars.top.scss'
+    imports: [
+        RouterLink
+    ],
+    styleUrl: './bars.top.scss'
 })
 export class TopBar {
   buttons = [
