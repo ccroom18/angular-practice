@@ -1,0 +1,41 @@
+.root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 4rem 20rem minmax(0, 1fr);
+  grid-template-rows: 2rem minmax(0, 1fr) 2rem;
+  grid-template-areas:
+    "left-bar top-bar top-bar"
+    "left-bar left-panel views"
+    "left-bar bottombar bottombar";
+}
+
+.root.collapse-panel {
+  grid-template-columns: 4rem 0 minmax(0, 1fr);
+}
+
+.left-panel-root {
+  grid-area: left-panel;
+}
+
+.left-bar-root {
+  grid-area: left-bar;
+  background: #1c1c1c;
+}
+
+.top-bar-root {
+  grid-area: top-bar;
+  background: #1c1c1c;
+}
+
+.view-panel-root {
+  grid-area: views;
+  overflow: auto;
+  background: #303030;
+  min-height: 0;
+  min-width: 0;
+}
+
+.bottombar {
+  grid-area: bottombar;
+  background: #1c1c1c;
+}

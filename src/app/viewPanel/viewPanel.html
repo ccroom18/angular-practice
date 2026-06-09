@@ -1,0 +1,14 @@
+<div class="view-panel" >
+  @for (view of views; track view.id; let i = $index) {
+    <div
+      class="view"
+      [class.active]="hoveredIndex === i"
+      [class.dragging]="draggingIndex === i"
+      [style.transform]="draggingIndex === i ? dragTransform : null"
+      [attr.data-index]="i"
+      (pointerdown)="startDrag($event, i)"
+    >
+      {{ view.id }}
+    </div>
+  }
+</div>

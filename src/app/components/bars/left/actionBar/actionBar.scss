@@ -1,0 +1,23 @@
+.action-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-button {
+  height: 3rem;
+  width: 3rem;
+  margin: 5px 0;
+  color: white;
+  background-color: #303030;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.action-button:hover {
+  background-color: #3c3c3c;
+}
